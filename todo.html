@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<link href="css/style-floats.css" rel="stylesheet">  
+<head>
+  <meta charset="utf-8">
+  
+  <title>To-Do List</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+    
+</head>
+    
+    
+
+<body>
+  
+     <nav class="nav">
+            <ul class="nav-links">
+                <a href="index.html" rel="homepage"><li class="nav-item">Home</li></a>
+                <li class="nav-item">Other Projects
+                    <ul class="dropdown">
+                              <a href="todo.html"><li>To-Do List</li></a>
+                        <a href="calculator.html"><li>Calculator</li></a>
+                        <a href="memory.html"><li>Memory Game</li></a>
+                        <a href="quiz.html"><li>Quiz Game</li></a>
+                        <a href="graphs.html"><li>Movable Graphs</li></a>
+                    </ul>
+                </li>
+                <a href="#About" rel="internal"><li class="nav-item">About</li></a>
+                <a href="#Contact" rel="internal"><li class="nav-item">Contact Us</li></a>
+            </ul>
+            </nav>
+     <footer>
+         
+    <section id="main" class="main-wrapper">
+        <section class="input-list">
+            <h2>Add Item to Your To-do List:</h2>
+            <label>To-do:
+                <input type="text" class="add__input">
+                 <button class="add__list__item">Add to List</button>
+            </label>
+           
+         </section>
+        
+        <section class="display-list">
+            <h1>To-Do:</h1>
+            <ul class="todo-list">
+                <!--
+                <li><p>Name of Event Will Go Here</p><input type="checkbox"><button class="del__list__item">Delete</button></li> -->                
+            </ul>
+        </section>
+        
+    </section>
+    <div class="footer-container">
+        <div class="footer-column">Sweet Logo Will Go Here</div>
+        <div class="footer-column">
+            <ul>    <li>Latest News</li> 
+                    <li>Careers</li> 
+                    <li>Other Text Link Stuff</li>
+            </ul></div>
+        <div class="footer-column"> Third Column</div>    
+        
+    </div>
+    </footer>
+<script src="js/todo.js"></script>
+</body>
+</html>
