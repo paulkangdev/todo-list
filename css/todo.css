@@ -1,0 +1,11 @@
+@import url(style-floats.css)
+    
+.inputs {
+    float: left;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: aqua;
+    width: 22%;
+    overflow:hidden;
+}

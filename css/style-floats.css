@@ -1,0 +1,321 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+nav {
+    width: 100%;
+    background-color: lightgray;
+    border-radius:10px;
+    border-style: groove;
+    padding-left: 30px;
+    padding-right: 10px;
+    position: fixed;
+    top:0px;
+    z-index:100;
+}
+
+.nav-links{
+    
+}
+
+nav li{
+    border-left-style: solid;
+    border-left-color: aqua;
+    color: white;
+    float: left;
+    padding:0.5em;
+    width: 15%;
+    position: relative;
+
+}
+
+nav li:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+nav ul li ul {
+    background-color:darkgray;
+    display: none;
+    opacity: 0;
+    position: absolute;
+        left: 0;
+        margin-top: 0.5rem;
+    transition: 1s;
+    visibility: hidden;
+    z-index: 100;
+}
+
+nav ul li:hover > ul, ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+nav ul li ul li {
+    clear: both;
+    background-color: darkgray;
+    border-left-style: dotted;
+    width: 100%;
+}
+
+.nav::after {
+    clear:both;
+    content:"";
+    display: table;
+}
+
+
+.main-wrapper{
+   max-width: 100%;
+    margin: 0 auto;
+   padding: 3.5rem 0 1rem 0;
+    
+}
+
+.main-wrapper::after {
+    clear:both;
+    content: "";
+    display:table;
+}
+
+.codepen {
+    float: left;
+    background-color: lightblue;
+    border-style: groove;
+    border-radius:10px;
+    border-color: aqua;
+    width: 44%;
+    padding:1.5em;
+}
+
+.instructions {
+    float: left;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: aqua;
+    width: 22%;
+    overflow:hidden;
+}
+
+
+.input{
+    float:left;
+    grid-area: input;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: red;
+    width: 22%;
+    padding: 1.5em;
+}
+
+footer .footer-container::after {
+   clear: both;
+    content: "";
+    display:table;
+}
+
+footer .footer-column {
+    border-left-style: solid;
+    border-left-color: aqua;
+    float: left;
+    padding:0.5em;
+    width:15%;
+}
+
+footer ul {
+}
+
+
+.input-list {
+    float: left;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: aqua;
+    width: 33%;
+    overflow:hidden;
+    padding:1.5em;
+}
+
+.input-list h2{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.input-list label {
+    border: lightblue;
+    border-style: solid;
+    padding: 0 1.5em 0 1.5em;
+    background-color: lightblue;
+    opacity: 0.8;
+}
+
+.display-list {
+    float: left;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: aqua;
+    width: 44%;
+    overflow:hidden;
+    padding: 1.5em;
+}
+
+.display-list h1{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.todo-list li p {
+    display: inline;
+    padding: 1.5em 0 1.5em
+}
+
+.todo-list li {
+    border: lightblue;
+    border-style: solid;
+    background-color: lightblue;
+    display:flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    margin-bottom: 0.25em;
+}
+
+.todo-list li input[type="checkbox"] {
+    align-self: center;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.todo-list li button {
+    align-self: center;
+    width: 3.5em;
+    height: 1.5em;
+}
+
+
+
+.main-wrapper {
+    display:block;
+    background-color: lightgray;
+    border: aqua;
+}
+
+.display-wrapper h1 {
+    color: black;
+    font-family: fantasy;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.question-wrapper {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.question-display {
+    align-content: center;
+    background-color: white;
+    border: aqua;
+    border-style: solid;
+    border-color: aqua;
+    border-width: thin;
+    padding: 2rem;
+}
+
+.banner {
+    align-self: center;
+    opacity: 0;
+    position: absolute;
+    transition: font-size 0.5s ease;
+    visibility: hidden;
+}
+
+.banner.correct.visible {
+    color: aqua;
+    font-size: 8rem;
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.banner.wrong.visible {
+    color: red;
+    font-size: 8rem;
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.statistics-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.questions-remaining {
+    
+}
+
+.statistics-panel {
+    
+    padding-left: 3rem;
+}
+
+.statistics-panel li{
+    
+}
+
+
+
+.answers-wrapper li {
+    background-color: lightgray;
+    border-width: thin;
+    border-style: solid;
+    border-color: aqua;
+    margin: 0.5rem;
+    opacity: 0.95;
+    padding: 0.5rem;
+    position:relative;
+    box-shadow: 0.25rem 0.25rem
+}
+
+.answers-wrapper li:hover{
+    background-color: azure; 
+    opacity: 0.95;
+    position: relative;
+        top: -0.25rem;
+        left: -0.25rem;
+    box-shadow: 0.25rem 0.25rem;
+    transition-delay: 0.1s ease;
+        
+}
+
+.answers-wrapper.invis {
+    visibility: hidden;
+}
+
+
+.answers-wrapper li: click{
+    background-color: lightgray;
+    position:relative;
+    top:0.25rem;
+    left:0.25rem;
+}
